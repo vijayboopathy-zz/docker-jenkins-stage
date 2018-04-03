@@ -8,7 +8,7 @@ pipeline {
     stage('Build') {
       steps {
         withCredentials([
-          usernamePassword(credentialsID: '', 
+#          usernamePassword(credentialsID: '', 
           passwordVariable: 'AWS_SECRET', 
           usernameVariable: 'AWS_KEY')
         ]) {
