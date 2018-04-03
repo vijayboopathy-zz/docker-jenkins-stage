@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'hashicorp/packer:full'
+      image 'goforgold/build-container:latest'
     }
   }
   stages {
