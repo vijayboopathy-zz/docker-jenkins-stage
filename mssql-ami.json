@@ -40,6 +40,10 @@
       ]
     },
     {
+      "type": "ansible-local",
+      "playbook_file": "./scripts/setup.yml"
+    },
+    {
       "type": "windows-restart"
     }
   ]
