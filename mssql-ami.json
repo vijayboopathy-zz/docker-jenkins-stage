@@ -31,7 +31,7 @@
     {
       "type": "file",
       "source": "./scripts/install-python.ps1",
-      "destination": "C:\\Windows\Temp\install-python.ps1"
+      "destination": "C:\\Windows\\Temp\\install-python.ps1"
     },
     {
       "type": "powershell",
