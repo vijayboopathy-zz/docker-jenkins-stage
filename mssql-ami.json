@@ -36,7 +36,7 @@
     {
       "type": "powershell",
       "inline": [
-        "C:\\Windows\Temp\install-python.ps1 -ExecutionPolicy Bypass"
+        "C:\\Windows\\Temp\\install-python.ps1 -ExecutionPolicy Bypass"
       ]
     },
     {
