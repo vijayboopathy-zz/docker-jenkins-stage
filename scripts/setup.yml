@@ -1,7 +1,11 @@
-- name: downlaod SQL Server 2014 SP2 package
-  win_get_url:
-    url: https://download.microsoft.com/download/6/D/9/6D90C751-6FA3-4A78-A78E-D11E1C254700/SQLServer2014SP2-KB3171021-x64-ENU.exe    dest: C:\Downloads\SQLServer2014SP2-KB3171021-x64-ENU.exe
-- name: install SQL Server 2014 SP2 package
-  win_package:
-    path: C:\Downloads\SQLServer2014SP2-KB3171021-x64-ENU.exe
-    state: present
+- name: Prepare AMI with installing dependencies
+  host: local
+  tasks:
+    - name: downlaod SQL Server 2014 SP2 package
+      win_get_url:
+        url: https://download.microsoft.com/download/6/D/9/6D90C751-6FA3-4A78-A78E-D11E1C254700/SQLServer2014SP2-KB3171021-x64-ENU.exe
+        dest: C:\Downloads\SQLServer2014SP2-KB3171021-x64-ENU.exe
+    - name: install SQL Server 2014 SP2 package
+      win_package:
+        path: C:\Downloads\SQLServer2014SP2-KB3171021-x64-ENU.exe
+        state: present
