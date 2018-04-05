@@ -45,10 +45,6 @@
       ]
     },
     {
-      "type": "ansible-local",
-      "playbook_file": "C:\\Windows\\Temp\\setup.yml"
-    },
-    {
       "type": "windows-restart"
     }
   ]
