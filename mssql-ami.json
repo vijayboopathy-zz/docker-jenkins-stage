@@ -24,7 +24,11 @@
       "user_data_file": "./bootstrap.txt",
       "communicator": "winrm",
       "winrm_username": "Administrator",
-      "winrm_password": "SuperS3cr3t!"
+      "winrm_use_ssl": true,
+      "winrm_insecure": true,
+      "metadata": {
+        "sysprep-specialize-script-cmd": "winrm set winrm/config/service/auth @{Basic=\"true\"}"
+      }
     }
   ],
   "provisioners": [
