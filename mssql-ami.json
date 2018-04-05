@@ -43,7 +43,6 @@
       "type": "ansible",
       "groups": "packer-build",
       "playbook_file": "./scripts/setup.yml",
-      "user": "Administrator",
       "extra_arguments": [
         "--connection", "packer",
         "--extra-vars", "ansible_shell_type=powershell ansible_shell_executable=None", "-vvv"
