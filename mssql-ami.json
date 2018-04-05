@@ -34,15 +34,14 @@
       "destination": "C:\\Windows\\Temp\\install-python.ps1"
     },
     {
-      "type": "file",
-      "source": "./scripts/setup.yml",
-      "destination": "C:\\Windows\\Temp\\setup.yml"
-    },
-    {
       "type": "powershell",
       "inline": [
         "C:\\Windows\\Temp\\install-python.ps1 -ExecutionPolicy Bypass"
       ]
+    },
+    {
+      "type": "ansible",
+      "playbook_file": "./scripts/setup.yml"
     },
     {
       "type": "windows-restart"
