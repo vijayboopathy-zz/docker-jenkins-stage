@@ -1,6 +1,6 @@
 ---
 - name: install requesite packages
-  hosts: default
+  hosts: packer-build
   tasks:
     - name: downlaod SQL Server 2014 SP2 package
       win_get_url:
