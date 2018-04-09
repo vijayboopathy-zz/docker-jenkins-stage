@@ -34,20 +34,20 @@
       "destination": "C:\\Windows\\Temp\\install-python.ps1"
     },
     {
+      "type": "file",
+      "source": "./setup.yml",
+      "destination": "C:\\Windows\\Temp\\setup.yml"
+    },
+    {
       "type": "powershell",
       "inline": [
         "C:\\Windows\\Temp\\install-python.ps1 -ExecutionPolicy Bypass"
       ]
     },
     {
-      "type": "ansible",
-      "groups": [
-        "windows"
-      ],
-      "playbook_file": "./setup.yml",
-      "extra_arguments": [
-        "--connection", "packer",
-        "--extra-vars", "ansible_shell_type=powershell ansible_shell_executable=None", "-vvv"
+      "type": "powershell",
+      "inline": [
+        "ansible-playbook  C:\\Windows\\Temp\\setup.yml"
       ]
     },
     {
