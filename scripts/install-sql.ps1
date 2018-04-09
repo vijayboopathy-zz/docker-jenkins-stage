@@ -5,3 +5,4 @@ $start_time = Get-Date
 
 Invoke-WebRequest -Uri $sqlurl -OutFile $sqldest
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
+
