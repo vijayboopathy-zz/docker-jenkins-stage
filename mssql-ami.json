@@ -34,9 +34,20 @@
       "destination": "C:\\Windows\\Temp\\install-python.ps1"
     },
     {
+      "type": "file",
+      "source": "./scripts/install-sql.ps1",
+      "destination": "C:\\Windows\\Temp\\install-sql.ps1"
+    },
+    {
       "type": "powershell",
       "inline": [
         "C:\\Windows\\Temp\\install-python.ps1 -ExecutionPolicy Bypass"
+      ]
+    },
+    {
+      "type": "powershell",
+      "inline": [
+        "C:\\Windows\\Temp\\install-sql.ps1 -ExecutionPolicy Bypass"
       ]
     },
     {
