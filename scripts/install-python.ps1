@@ -12,6 +12,5 @@ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 choco upgrade chocolatey
 choco install -y python2
 python -m pip install --upgrade pip
-pip install ansible
 Invoke-WebRequest -Uri $sqlurl -OutFile $sqldest
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
