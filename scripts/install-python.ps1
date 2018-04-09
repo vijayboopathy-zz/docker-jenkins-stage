@@ -7,10 +7,8 @@ $sqlurl  = "https://download.microsoft.com/download/6/D/9/6D90C751-6FA3-4A78-A78
 $sqldest = "$commondest\SQLServer2014SP2-KB3171021-x64-ENU.exe"
 $start_time = Get-Date 
 
-
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 choco upgrade chocolatey
 choco install -y python2
-python -m pip install --upgrade pip
 Invoke-WebRequest -Uri $sqlurl -OutFile $sqldest
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
