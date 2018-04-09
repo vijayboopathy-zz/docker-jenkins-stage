@@ -41,7 +41,10 @@
     },
     {
       "type": "ansible",
-      "groups": "packer-build",
+      "user": "ec2-user",
+      "groups": [
+        "windows"
+      ],
       "playbook_file": "./scripts/setup.yml",
       "extra_arguments": [
         "--connection", "packer",
