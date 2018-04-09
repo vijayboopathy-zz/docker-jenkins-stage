@@ -39,6 +39,11 @@
       "destination": "C:\\Windows\\Temp\\install-sql.ps1"
     },
     {
+      "type": "file",
+      "source": "./scripts/ConfigurationFile.ini",
+      "destination": "C:\\Windows\\Temp\\ConfigurationFile.ini"
+    },
+    {
       "type": "powershell",
       "inline": [
         "C:\\Windows\\Temp\\install-python.ps1 -ExecutionPolicy Bypass"
