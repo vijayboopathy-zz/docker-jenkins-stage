@@ -23,7 +23,7 @@
       "ami_name": "quaero-mssql-base-{{timestamp}}",
       "user_data_file": "./bootstrap.txt",
       "communicator": "winrm",
-      "winrm_username": "Administrator",
+      "winrm_username": "packer",
       "winrm_password": "SuperS3cr3t!"
     }
   ],
@@ -41,11 +41,10 @@
     },
     {
       "type": "ansible",
-      "user": "ec2-user",
       "groups": [
         "windows"
       ],
-      "playbook_file": "./scripts/setup.yml",
+      "playbook_file": "./setup.yml",
       "extra_arguments": [
         "--connection", "packer",
         "--extra-vars", "ansible_shell_type=powershell ansible_shell_executable=None", "-vvv"
