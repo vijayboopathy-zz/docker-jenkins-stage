@@ -34,20 +34,9 @@
       "destination": "C:\\Windows\\Temp\\install-python.ps1"
     },
     {
-      "type": "file",
-      "source": "./setup.yml",
-      "destination": "C:\\Windows\\Temp\\setup.yml"
-    },
-    {
       "type": "powershell",
       "inline": [
         "C:\\Windows\\Temp\\install-python.ps1 -ExecutionPolicy Bypass"
-      ]
-    },
-    {
-      "type": "powershell",
-      "inline": [
-        "ansible-playbook  C:\\Windows\\Temp\\setup.yml"
       ]
     },
     {
