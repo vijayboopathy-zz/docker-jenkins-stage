@@ -23,7 +23,7 @@
       "ami_name": "quaero-mssql-base-{{timestamp}}",
       "user_data_file": "./bootstrap.txt",
       "communicator": "winrm",
-      "winrm_username": "packer",
+      "winrm_username": "Administrator",
       "winrm_password": "SuperS3cr3t!"
     }
   ],
